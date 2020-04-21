@@ -82,10 +82,13 @@ recipes.remove(<minecraft:wooden_shovel>);
 //以上都放Tools
 
 recipes.addShaped(<ic2:crafting:12>, [[<ic2:re_battery:26>.anyDamage(), <ic2:cable>, <ic2:casing:5>],[<ic2:advanced_re_battery:26>.anyDamage(), <immersiveengineering:material:27>, <ic2:crafting:6>], [<ic2:re_battery:26>.anyDamage(), <ic2:cable>, <ic2:casing:5>]]);
-recipes.addShaped(<ic2:crafting:11>, [[null, <ic2:cable:4>, <ic2:casing:3>],[<ic2:re_battery:26>.anyDamage(), <immersiveengineering:material:27>, <techguns:itemshared:70>], [null, <ic2:cable:4>, <ic2:casing:3>]]);
+recipes.addShaped(<ic2:crafting:11>,
+ [[null, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <ic2:casing:3>],
+ [<ic2:re_battery:26>.anyDamage(), <immersiveengineering:material:27>, <techguns:itemshared:70>],
+ [null, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <ic2:casing:3>]]);
 //IC驱动把手
 
-recipes.addShaped(<minecraft:wooden_sword:*>,
+recipes.addShaped(<minecraft:wooden_sword>,
 [[null,<immersiveengineering:treated_wood:*>,null],
 [null,<immersiveengineering:treated_wood:*>,null],
 [null,<immersiveengineering:material>,null]]);
@@ -95,6 +98,14 @@ recipes.addShaped(<ic2:cell>*16,
 [[null,<ic2:casing:6>,null],
 [<ic2:casing:6>,<ic2:casing:5>,<ic2:casing:6>],
 [null,<ic2:casing:6>,null]]);
+//应该是IC空单元
 
 mods.forestry.Carpenter.removeRecipe(<forestry:soldering_iron>);
-//FR电烙铁 Tools 待续合成
+recipes.addShaped(<forestry:soldering_iron>,
+[[<slashbladetic:slashblade.blade>.withTag({Material: "steel"}),<ic2:casing:5>,<ic2:casing:5>],
+[<ic2:casing:5>,<techguns:itemshared:68>,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte})],
+[<ic2:casing:5>,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte}),<ic2:re_battery:26>]]);
+//FR电烙铁 Tools
+
+recipes.remove(<forestry:can>);
+//林业锡罐禁止合成

@@ -25,9 +25,13 @@ mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <immersiveengineering:metal:
 mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:iron_ore>);
 mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:bucket>);
 //匠魂不能烧铁，开心吗
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <minecraft:bucket>);
+//铁桶熔成钢smjb
+mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <minecraft:bucket>);
+//青铜也别熔了
 recipes.remove(<immersiveengineering:metal:18>);
 //删除IE锤子锤铁粉的合成
-mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:iron_ingot>, <ore:Fe2O3>, <ore:dustCoal>,1000);
+mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:iron_ingot>, <ore:Fe2O3>, <ore:dustCoal>,400);
 //改用IE合金炉烧铁，用时50s
 furnace.remove(<immersiveengineering:metal:1>);
 //直接烧铝？不存在的
@@ -40,8 +44,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:metal:1>*2,
 mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:metal:1>*4, <immersiveengineering:metal:10>, null, 200, 8000,[<ore:dustAluminum>*3,<ore:dustCoke>,<ore:dustStone>]);
 //将近一分钟一个铝，是不是非常GT？
 mods.immersiveengineering.ArcFurnace.removeRecipe(<techguns:itemshared:85>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<techguns:itemshared:78>, <techguns:itemshared:78>, null, 1000, 2000,[<immersivetech:material>]);
-mods.immersiveengineering.ArcFurnace.addRecipe(<techguns:itemshared:78>*2, <techguns:itemshared:78>, null, 500, 8000,[<immersivetech:material>,<techguns:itemshared:78>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<techguns:itemshared:85>, <techguns:itemshared:78>, null, 1000, 2000,[<immersivetech:material>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<techguns:itemshared:85>*2, <techguns:itemshared:78>, null, 500, 8000,[<immersivetech:material>,<techguns:itemshared:78>]);
 //钛哪里那么便宜
 mods.immersiveengineering.Squeezer.removeItemRecipe(<immersiveengineering:material:18>);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveengineering:material:18>, null, <ic2:crafting:17>,131072);
@@ -138,10 +142,16 @@ furnace.remove(<ore:charcoal>,<ore:logWood>);
 //取消熔炉烧木炭配方 BasicMaterials
 
 furnace.remove(<appliedenergistics2:material:5>);
-mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>, <ic2:dust:13>, <ore:dustCoke>,3200);
-mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:2>, <ore:dustCoke>,3200);
-mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:3>, <ore:dustCoke>,3200);
+mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>*4, <ic2:dust:13>, <ore:dustCoke>,400);
+mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:2>, <ore:dustCoke>,400);
+mods.immersiveengineering.AlloySmelter.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:3>, <ore:dustCoke>,400);
 //合金炉烧AE硅
+mods.immersiveengineering.ArcFurnace.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:2>, null, 256, 64,[<ore:dustCoke>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:3>, null, 256, 64,[<ore:dustCoke>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<appliedenergistics2:material:5>*4,<ic2:dust:13>, null, 256, 64,[<ore:dustCoke>]);
+//电弧炉烧AE硅
+mods.immersiveengineering.Squeezer.addRecipe(<appliedenergistics2:material>, null, <botania:quartz:1>,2048);
+//IE挤压机挤赛特斯石英
 mods.immersiveengineering.Crusher.removeRecipe(<ic2:dust:5>);
 //IE破碎机不能磨钻石粉
 recipes.addShaped(<avaritia:resource:6>, [[<techguns:itemshared:85>, <avaritia:resource:4>, <botania:manaresource:4>],[<avaritia:resource:4>, <avaritia:resource:5>, <avaritia:resource:4>], [<ic2:crafting:4>, <avaritia:resource:4>, <draconicevolution:draconic_ingot>]]);
@@ -156,3 +166,27 @@ recipes.addShaped(<ic2:crafting:16>,
 [<immersiveengineering:material:17>,<minecraft:flint>,<immersiveengineering:material:17>],
 [<immersiveengineering:material:17>,<immersiveengineering:material:17>,<immersiveengineering:material:17>]]);
 //煤球
+mods.botania.ElvenTrade.addRecipe([<appliedenergistics2:material:10>],[<appliedenergistics2:crystal_seed>.withTag({progress: 0})]);
+mods.botania.ElvenTrade.addRecipe([<appliedenergistics2:material:11>],[<appliedenergistics2:crystal_seed:600>.withTag({progress: 600})]);
+mods.botania.ElvenTrade.addRecipe([<appliedenergistics2:material:12>],[<appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200})]);
+//既然精灵的世界和主世界时间速度不同的话，干脆让他们帮我们等好了
+mods.immersiveengineering.Crusher.addRecipe(<appliedenergistics2:material:8>, <ore:crystalFluix>, 2048);
+mods.immersiveengineering.Crusher.addRecipe(<appliedenergistics2:material:2>, <ore:crystalCertusQuartz>, 2048);
+//IE磨粉机膜福鲁伊克斯水晶和赛特斯石英
+mods.techguns.ChemLab.addRecipe(<immersivetech:material>,1,<ic2:dust:2>,1,<liquid:water>*1000,true,<immersivetech:material>*2,<liquid:water>*0,100);
+//盐做盐
+mods.immersiveengineering.Crusher.addRecipe(<ic2:dust:2>, <minecraft:coal:1>*2, 512);
+mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:material:17>*2, <ore:blockCharcoal>, 1024);
+//木炭做煤粉
+
+recipes.addShapeless(<ic2:dust:15>,[<chisel:limestone2:7>,<ic2:forge_hammer:*>]);
+//石灰岩做石粉
+
+recipes.addShapeless(<minecraft:dye:15>,[<ic2:dust:15>,<ore:fertilizer>]);
+//石粉+肥料做骨粉
+
+mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:metal:18>, <minecraft:sand:1>, 2048);
+//红沙做铁
+
+recipes.addShapeless(<ic2:dust:26>*9,[<ore:dustSilver>]);
+//小撮银粉

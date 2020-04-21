@@ -12,3 +12,5 @@ mods.immersivepetroleum.Distillation.addRecipe([<liquid:ethanol>*144],[<immersiv
 //汽油分馏出IE乙醇
 mods.immersivepetroleum.Distillation.addRecipe([<liquid:ethanol>*144],[<immersivepetroleum:material>], <liquid:ic2biogas>*2000,256,20, [1,1] );
 //IC沼气分馏出IE乙醇
+mods.immersiveengineering.Refinery.addRecipe(<liquid:biodiesel>, <liquid:ic2biogas>, <liquid:plantoil>, 2048);
+//IC沼气和IE植物油出IE生物柴油

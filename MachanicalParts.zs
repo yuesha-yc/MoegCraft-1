@@ -40,9 +40,11 @@ recipes.addShaped(<techguns:itemshared:70>,
 recipes.remove(<tconstruct:soil>);
 //TiC水泥也改啊，当然改.
 recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone:*>]);
+recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone1:*>]);
+recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone2:*>]);
 //改成这德行
 
-recipes.addShapeless(<ic2:crafting:29>,[<minecraft:iron_block>,<ic2:forge_hammer>]);
+recipes.addShapeless(<ic2:crafting:29>,[<minecraft:iron_block>,<ic2:forge_hammer:*>,<immersiveengineering:tool>]);
 //把整个铁块敲成柄很不容易的，整个锤子都爆掉了
 
 recipes.remove(<draconicevolution:draconic_core>);
@@ -178,7 +180,14 @@ recipes.addShaped(<immersiveengineering:sheetmetal:9>*2,
 [<ore:plateIron>,<ic2:wrench>.anyDamage().transformDamage(1),<ore:plateIron>]]);
 //铁板金属块
 
-recipes.remove(<techguns:itemshared:104>);recipes.addShaped(<techguns:itemshared:104>, [[<ic2:cable:1>, <ic2:energy_crystal>.withTag({charge: 1000000.0}).onlyWithTag({charge: 1000000.0}), <ic2:cable:1>],[<ic2:thick_neutron_reflector>, <techguns:itemshared:41>, <ic2:thick_neutron_reflector>], [<immersiveengineering:metal:33>, <appliedenergistics2:quartz_vibrant_glass>, <immersiveengineering:metal:33>]]);//热能聚焦点..之前的合成不知道为什么没了
+recipes.remove(<techguns:itemshared:104>);mods.techguns.Fabricator.addRecipe(<ic2:energy_crystal>.withTag({charge: 1000000.0}),4,<ic2:crafting:1>,4, <appliedenergistics2:quartz_vibrant_glass>,8, <ic2:thick_neutron_reflector>,2, <techguns:itemshared:104>);//热能聚焦点...制造室真是卡科技线利器
 
+recipes.addShaped(<techguns:itemshared:41>,[
+[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],
+[<minecraft:glass>,<minecraft:glass>,<ic2:energy_crystal>.withTag({charge: 1000000.0})],
+[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]]);
+//镭射枪管，能量水晶更贵一些
+
+recipes.addShapeless(<ic2:thick_neutron_reflector>.withTag({advDmg: 0}),[<ic2:thick_neutron_reflector>]);
 recipes.addShaped(<ic2:advanced_heat_vent>, [[<minecraft:iron_bars>, <ic2:crafting:2>, <minecraft:iron_bars>],[<minecraft:iron_bars>, <ic2:heat_vent>, <minecraft:iron_bars>], [<minecraft:iron_bars>, <ic2:crafting:2>, <minecraft:iron_bars>]]);
 //高级散热片或许更便宜的合成

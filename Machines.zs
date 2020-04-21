@@ -254,3 +254,8 @@ recipes.addShaped(<tconstruct:smeltery_controller>,
 [<immersiveengineering:material:26>,<techguns:itemshared:70>,<immersiveengineering:material:26>],
 [<tconstruct:materials>,<tconstruct:materials>,<tconstruct:materials>]]);
 //冶炼炉控制器
+recipes.addShaped(<forestry:bottler>,
+[[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte}),<techguns:itemshared:70>,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte})],
+[<ic2:fluid_cell>,<forestry:sturdy_machine>,<ic2:fluid_cell>],
+[<ic2:casing>,<ic2:casing>,<ic2:casing>]]);
+//林业单元
