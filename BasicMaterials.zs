@@ -191,3 +191,6 @@ recipes.addShapeless(<ic2:dust:15>,[<chisel:limestone2:7>,<ic2:forge_hammer:*>])
 
 recipes.addShapeless(<minecraft:dye:15>,[<ic2:dust:15>,<ore:fertilizer>]);
 //石粉+肥料做骨粉
+
+mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:metal:18>, <minecraft:sand:1>, 2048);
+//红沙做铁
