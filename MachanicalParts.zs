@@ -40,6 +40,8 @@ recipes.addShaped(<techguns:itemshared:70>,
 recipes.remove(<tconstruct:soil>);
 //TiC水泥也改啊，当然改.
 recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone:*>]);
+recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone1:*>]);
+recipes.addShapeless(<tconstruct:soil>*4,[<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<minecraft:concrete_powder:*>,<chisel:limestone:*>,<chisel:limestone2:*>]);
 //改成这德行
 
 recipes.addShapeless(<ic2:crafting:29>,[<minecraft:iron_block>,<ic2:forge_hammer:*>,<immersiveengineering:tool>]);

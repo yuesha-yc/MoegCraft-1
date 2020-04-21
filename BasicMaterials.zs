@@ -179,13 +179,6 @@ mods.immersiveengineering.Crusher.addRecipe(<ic2:dust:2>, <minecraft:coal:1>*2, 
 mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:material:17>*2, <ore:blockCharcoal>, 1024);
 //木炭做煤粉
 
-recipes.remove(<tconstruct:firewood:1>);
-recipes.addShaped(<tconstruct:firewood:1>,
-[[<minecraft:blaze_powder>,<ic2:dust:13>,<minecraft:blaze_powder>],
-[<ic2:dust:13>,<tconstruct:firewood>,<ic2:dust:13>],
-[<minecraft:blaze_powder>,<ic2:dust:13>,<minecraft:blaze_powder>]]);
-//烈焰木要改
-
 recipes.addShapeless(<ic2:dust:15>,[<chisel:limestone2:7>,<ic2:forge_hammer:*>]);
 //石灰岩做石粉
 
@@ -194,3 +187,6 @@ recipes.addShapeless(<minecraft:dye:15>,[<ic2:dust:15>,<ore:fertilizer>]);
 
 mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:metal:18>, <minecraft:sand:1>, 2048);
 //红沙做铁
+
+recipes.addShapeless(<ic2:dust:26>*9,[<ore:dustSilver>]);
+//小撮银粉
