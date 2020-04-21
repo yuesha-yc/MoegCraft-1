@@ -144,7 +144,7 @@ recipes.addShaped(<ic2:te:6>, [[null, <ic2:plate:5>, null],[<ic2:plate:5>, <ic2:
 recipes.addShaped(<ic2:te:11>, [[<ic2:casing:5>, <ic2:casing:5>, <immersiveengineering:material:3>],[<techguns:itemshared:70>, <ic2:resource:12>, <ic2:rotor_wood>], [<ic2:casing:5>, <ic2:casing:5>, <immersiveengineering:material:3>]]);
 recipes.addShaped(<ic2:te:10>, [[<ic2:casing>, <ic2:casing>, <ic2:casing>],[<techguns:itemshared:70>, <ic2:resource:12>, <ic2:rotor_wood>], [<ic2:casing>, <ic2:casing>, <ic2:casing>]]);
 recipes.addShaped(<ic2:te:7>, [[<ic2:casing:5>, <forestry:ffarm:2>, <ic2:plate>],[<ic2:crafting:6>, <ic2:crafting:36>, <ic2:resource:12>], [<ic2:casing:5>, <forestry:ffarm:2>, <ic2:plate>]]);
-recipes.addShaped(<ic2:te:8>, [[<minecraft:glass_pane>, <minecraft:glass_pane>, <minecraft:glass_pane>],[<ic2:cable:4>, <appliedenergistics2:material:20>, <ic2:cable:4>], [<ic2:casing:3>, <ic2:casing:3>, <ic2:casing:3>]]);
+recipes.addShaped(<ic2:te:8>, [[<minecraft:glass_pane>, <minecraft:glass_pane>, <minecraft:glass_pane>],[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}), <appliedenergistics2:material:20>, <ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})], [<ic2:casing:3>, <ic2:casing:3>, <ic2:casing:3>]]);
 //其它各色发电机
 
 recipes.remove(<immersiveengineering:metal_device1:2>);
@@ -189,3 +189,10 @@ recipes.addShaped(<ic2:te:74>, [[<ic2:energy_crystal:26>.anyDamage(), <ic2:energ
 [<teslacorelib:machine_case>,<ic2:cable:2>.withTag({type: 2 as byte, insulation: 2 as byte}),<ic2:cable:2>.withTag({type: 2 as byte, insulation: 2 as byte})],
  [<ic2:energy_crystal:26>.anyDamage(), <ic2:energy_crystal:26>.anyDamage(), <ic2:casing:2>]]);
 //MFE
+
+recipes.remove(<industrialforegoing:biofuel_generator>);
+recipes.addShaped(<industrialforegoing:biofuel_generator>,[
+[<industrialforegoing:plastic>,<ic2:te:3>,<industrialforegoing:plastic>],
+[<industrialforegoing:plastic>,<teslacorelib:machine_case>,<industrialforegoing:plastic>],
+[<minecraft:blaze_rod>,<ic2:te:13>,<minecraft:blaze_rod>]]);
+//生物燃油发电机

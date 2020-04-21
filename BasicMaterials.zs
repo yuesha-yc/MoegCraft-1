@@ -31,7 +31,7 @@ mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <minecraft:bucket>);
 //青铜也别熔了
 recipes.remove(<immersiveengineering:metal:18>);
 //删除IE锤子锤铁粉的合成
-mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:iron_ingot>, <ore:Fe2O3>, <ore:dustCoal>,1000);
+mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:iron_ingot>, <ore:Fe2O3>, <ore:dustCoal>,400);
 //改用IE合金炉烧铁，用时50s
 furnace.remove(<immersiveengineering:metal:1>);
 //直接烧铝？不存在的
@@ -178,3 +178,16 @@ mods.techguns.ChemLab.addRecipe(<immersivetech:material>,1,<ic2:dust:2>,1,<liqui
 mods.immersiveengineering.Crusher.addRecipe(<ic2:dust:2>, <minecraft:coal:1>*2, 512);
 mods.immersiveengineering.Crusher.addRecipe(<immersiveengineering:material:17>*2, <ore:blockCharcoal>, 1024);
 //木炭做煤粉
+
+recipes.remove(<tconstruct:firewood:1>);
+recipes.addShaped(<tconstruct:firewood:1>,
+[[<minecraft:blaze_powder>,<ic2:dust:13>,<minecraft:blaze_powder>],
+[<ic2:dust:13>,<tconstruct:firewood>,<ic2:dust:13>],
+[<minecraft:blaze_powder>,<ic2:dust:13>,<minecraft:blaze_powder>]]);
+//烈焰木要改
+
+recipes.addShapeless(<ic2:dust:15>,[<chisel:limestone2:7>,<ic2:forge_hammer:*>]);
+//石灰岩做石粉
+
+recipes.addShapeless(<minecraft:dye:15>,[<ic2:dust:15>,<ore:fertilizer>]);
+//石粉+肥料做骨粉
