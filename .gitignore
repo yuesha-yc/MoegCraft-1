@@ -1,5 +1,6 @@
 # Blacklist everything by default
 /*
+.DS_Store
 
 !/.gitignore
 !/.gitattributes
