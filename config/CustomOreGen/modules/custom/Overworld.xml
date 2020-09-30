@@ -1,0 +1,198 @@
+<ConfigSection>
+    <IfCondition condition=':= dimension.id = 0'>
+         <Cloud name='IronOre' inherits='PresetStrategicCloud'>
+		 <OreBlock block='minecraft:iron_ore' />
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 10 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.6 * _default_ ' range=':= 1 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.8 * _default_ ' range=':= 0.8 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 35' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+			<Veins name='IronVein'  inherits='PresetHintVeins'>
+                <OreBlock block='contenttweaker:iron'/>
+				<ReplacesOre block='grass'/>
+				<Setting name='BranchFrequency' avg='0' range='0'/> 
+               <Setting name='MotherlodeHeight' avg=':= 32' range=':= 32'/>
+                <Setting name='MotherlodeFrequency' avg=':= 4 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+		        <Cloud name='Copper' inherits='PresetStrategicCloud'>
+            <OreBlock block='ic2:resource:1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 10 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.6 * _default_ ' range=':= 1 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.9 * _default_ ' range=':= 0.9 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 35' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 4.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+			<Veins name='CopperVein'  inherits='PresetHintVeins'>
+                <OreBlock block='contenttweaker:copper'/>
+				<ReplacesOre block='grass'/>
+				<Setting name='BranchFrequency' avg='0' range='0'/> 
+               <Setting name='MotherlodeHeight' avg=':= 32' range=':= 32'/>
+                <Setting name='MotherlodeFrequency' avg=':= 4 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+		<Cloud name='Tin' inherits='PresetStrategicCloud'>
+            <OreBlock block='ic2:resource:3'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 8 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.6 * _default_ ' range=':= 0.6 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.6 * _default_ ' range=':= 0.6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 35' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+			<Veins name='TinVein'  inherits='PresetHintVeins'>
+                <OreBlock block='contenttweaker:tin'/>
+				<ReplacesOre block='grass'/>
+				<Setting name='BranchFrequency' avg='0' range='0'/> 
+               <Setting name='MotherlodeHeight' avg=':= 32' range=':= 32'/>
+                <Setting name='MotherlodeFrequency' avg=':= 4 * _default_' range=':= _default_'/>
+            </Veins>
+        </Cloud>
+		<Cloud name='coal' inherits='PresetStrategicCloud'>
+            <OreBlock block='minecraft:coal_ore'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 8 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.6 * _default_ ' range=':= 0.6 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.6 * _default_ ' range=':= 0.6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 40' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 6 * _default_ ' range=':= 5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+				<Cloud name='aluminum' inherits='PresetStrategicCloud'>
+				<OreBlock block='immersiveengineering:ore:1' weight='0.9'/>
+				<OreBlock block='techguns:basicore:3' weight='0.1'/>
+				<ReplacesOre block='stone'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 1 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.5 * _default_ ' range=':= 1 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 70' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 3 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='lead' inherits='PresetStrategicCloud'>
+            <OreBlock block='immersiveengineering:ore:2'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 20' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 5 * _default_ ' range=':= 3 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='nickel' inherits='PresetStrategicCloud'>
+            <OreBlock block='immersiveengineering:ore:4'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 3.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.3 * _default_ ' range=':= 0.3 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 20' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3 * _default_ ' range=':= 3 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='gold' inherits='PresetStrategicCloud'>
+            <OreBlock block='minecraft:gold_ore'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 3.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.3 * _default_ ' range=':= 0.3 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.3 * _default_ ' range=':= 0.3 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 15' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3.5 * _default_ ' range=':= 3.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='silver' inherits='PresetStrategicCloud'>
+            <OreBlock block='immersiveengineering:ore:3'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 3.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 15' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3.5 * _default_ ' range=':= 3.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='redstone' inherits='PresetStrategicCloud'>
+            <OreBlock block='minecraft:redstone_ore' weight='0.9'/>
+			<OreBlock block='contenttweaker:sub_block_holder_0' weight='0.1'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 10' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3.5 * _default_ ' range=':= 3.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='lapis' inherits='PresetStrategicCloud'>
+            <OreBlock block='minecraft:lapis_ore'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 4.5 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 10' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3.5 * _default_ ' range=':= 3.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+		<Cloud name='diamond' inherits='PresetStrategicCloud'>
+            <OreBlock block='minecraft:coal_ore' weight='0.7'/>
+			<OreBlock block='minecraft:diamond_ore' weight='0.3'/>
+            <Biome name='.*'  />
+            <Setting name='DistributionFrequency' avg=':= 3 * _default_ ' range=':= 6 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudRadius' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' />
+            <Setting name='CloudThickness' avg=':= 0.4 * _default_ ' range=':= 0.4 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='CloudHeight' avg=':= 10' range=':= 5' type='normal'/>
+            <Setting name='ParentRangeLimit' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudSizeNoise' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='CloudInclination' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+            <Setting name='OreDensity' avg=':= 3.5 * _default_ ' range=':= 3.5 * _default_ ' type='normal' scaleTo='base' />
+            <Setting name='OreVolumeNoiseCutoff' avg=':= 0.5 * _default_ ' range=':= 0.5 * _default_ ' type='normal' />
+            <Setting name='OreRadiusMult' avg=':= _default_ ' range=':= _default_ ' type='normal' />
+        </Cloud>
+ </IfCondition>
+
+</ConfigSection>

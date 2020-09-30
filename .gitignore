@@ -1,6 +1,5 @@
 # Blacklist everything by default
-/*
-.DS_Store
+*
 
 !/.gitignore
 !/.gitattributes
@@ -15,14 +14,23 @@
 !/supporterlistgold.txt
 
 # Changelogs
-!/changelog_en_US.txt
-!/changelog_zh_CN.txt
+!/CHANGELOG
 
 # Lang file
 !/GregTech.lang
 
 # Resources
-!/resources/
-!/scripts/
+!/resources
+!/scripts
+!/resourcepacks/TFR Theme Texture
+!/modpack
 !/config/
-!/resourcepacks/
+!/gregtech.cfg
+
+!/config/IGI_TFR_DEBUG.xml
+!/config/IGI_TFR_USER.xml
+
+# Options files
+!/gregtech.cfg
+!/options.txt
+/options.txt

@@ -1,0 +1,17 @@
+item.contenttweaker.Mg_dust.name=镁粉
+item.contenttweaker.Ti_dust.name=钛粉
+
+tile.contenttweaker.lead.name=铅矿沙砾
+tile.contenttweaker.tin.name=锡矿沙砾
+tile.contenttweaker.iron.name=铁矿沙砾
+tile.contenttweaker.copper.name=铜矿沙砾
+tile.contenttweaker.aluminum.name=铝矿沙砾
+tile.contenttweaker.gold.name=金矿沙砾
+tile.contenttweaker.nickel.name=镍矿沙砾
+tile.contenttweaker.silver.name=银矿沙砾
+
+fluid.TiCl4=四氯化钛
+fluid.Chlorine=氯(蒸馏塔)
+fluid.salt_solution=盐水
+
+

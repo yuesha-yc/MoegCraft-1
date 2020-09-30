@@ -158,9 +158,9 @@ recipes.remove(<immersiveengineering:metal_device1:3>);
 //删除IE热传导发电机合成 Energy
 
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
-recipes.addShaped(<immersiveengineering:metal_decoration0:6>,
+recipes.addShaped(<immersiveengineering:metal_decoration0:6>*3,
 [[<ic2:casing:5>,<ic2:casing:5>,<ic2:casing:5>],
-[<ore:plateElectrum>,<immersiveengineering:metal_device1:2>,<ore:plateElectrum>],
+[<techguns:itemshared:54>,<teslacorelib:machine_case>,<techguns:itemshared:54>],
 [<ic2:casing:5>,<ic2:casing:5>,<ic2:casing:5>]]);
 //IE发电机模块 Energy
 

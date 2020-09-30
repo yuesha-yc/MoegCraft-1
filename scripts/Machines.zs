@@ -259,3 +259,5 @@ recipes.addShaped(<forestry:bottler>,
 [<ic2:fluid_cell>,<forestry:sturdy_machine>,<ic2:fluid_cell>],
 [<ic2:casing>,<ic2:casing>,<ic2:casing>]]);
 //林业单元
+recipes.remove(<ic2:te:82>);
+//删除区块加载

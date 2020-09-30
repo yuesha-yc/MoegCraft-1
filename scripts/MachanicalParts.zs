@@ -198,6 +198,14 @@ recipes.addShaped(<techguns:itemshared:41>,[
 recipes.addShapeless(<ic2:thick_neutron_reflector>.withTag({advDmg: 0}),[<ic2:thick_neutron_reflector>]);
 recipes.addShaped(<ic2:advanced_heat_vent>, [[<minecraft:iron_bars>, <ic2:crafting:2>, <minecraft:iron_bars>],[<minecraft:iron_bars>, <ic2:heat_vent>, <minecraft:iron_bars>], [<minecraft:iron_bars>, <ic2:crafting:2>, <minecraft:iron_bars>]]);
 //高级散热片或许更便宜的合成
+
+recipes.remove(<appliedenergistics2:grindstone>);
+recipes.addShaped(<appliedenergistics2:grindstone>,
+[[<minecraft:cobblestone>,<appliedenergistics2:material:40>,<minecraft:cobblestone>],
+[<minecraft:flint>,<minecraft:cobblestone>,<minecraft:flint>],
+[<minecraft:cobblestone>,<minecraft:flint>,<minecraft:cobblestone>]]);
+//石英模具
+
 ReactionChamber.removeRecipe(<techguns:basicore:3>, <liquid:creeper_acid>);
 //删除钛矿石处理
 ChemLab.addRecipe(<techguns:itemshared:78>,1,<ic2:dust:2>,1,<liquid:chlorine>*400,true,null,<liquid:ticl4>*1000,256);
@@ -205,6 +213,9 @@ ChemLab.addRecipe(<techguns:itemshared:78>,1,<ic2:dust:2>,1,<liquid:chlorine>*40
 ChemLab.addRecipe(<contenttweaker:mg_dust>,0,<contenttweaker:mg_dust>,1,<liquid:ticl4>*1000,true,<contenttweaker:ti_dust>,<liquid:water>*0,256);
 //钛粉处理
 recipes.remove(<techguns:itemshared:70>);
-
-
 //删除配方
+
+
+mods.immersiveengineering.Crusher.addRecipe(<techguns:itemshared:78>*2,<techguns:basicore:3>, 2048);
+//钛矿石粉碎
+

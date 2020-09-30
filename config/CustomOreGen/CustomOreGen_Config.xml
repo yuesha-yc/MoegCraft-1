@@ -396,24 +396,38 @@
          NOTE: to override a default config, remove the corresponding
          directive (and optionally add something to 'modules/custom')
     -->
-
-    <Import file='modules/default/Chisel2.xml'/>
-    <Import file='modules/default/GeoStrata.xml'/>   
-
-    <Import file='modules/default/Vanilla.xml'/>
     
-    <Import file='modules/default/AppliedEnergistics.xml'/>
-    <Import file='modules/default/Forestry.xml'/>
-    <Import file='modules/default/ImmersiveEngineering.xml'/>
-    <Import file='modules/default/IndustrialCraft2.xml'/>
-    <Import file='modules/default/TinkersConstruct.xml'/>
+    <!-- First are the stone-based configurations; this way, they can be
+         overridden using the stone oredict entry. -->
+
+    <!-- These rules allow for additional subterranean features. -->
+
+
+    <!-- Vanilla minecraft ores should always be the first ores to 
+         load. -->
+
+    
+    <!-- Dense Ores in particular NEEDS to be run after the vanilla
+         configuration, as it clears and regenerates vanilla ores while
+         mixing the dense ores with them. -->
+
+
+    <!-- Then, the rest are free to come in. -->
+
+    <!-- Gregtech checks for other ores' oredict values.  It will need to be
+	 among the last default configurations to load. -->
+
 
     <!-- ***************** Import Mod-provided configs ********************* -->
     <!-- NOTE: mods will overwrite these configs upon each load -->
-    <OptionalImport file='modules/mods/*.xml'/>
     
     <!-- ******************** Import Custom Configs ************************ -->
-    <OptionalImport file='modules/custom/*.xml'/>
+	<OptionalImport file='modules/custom/Overworld.xml'/>
+	<OptionalImport file='modules/custom/Nether.xml'/>
+    <!-- Gregtech checks for other ores' oredict values.  Uncomment the
+	 the following to have it override custom configurations -->
+<!--    <Import file='modules/default/Gregtech6.xml'/>   -->
+<!--    <Import file='modules/default/Gregtech.xml'/>    -->
     
     <!--*************************   Testing & Debugging   *********************
     *   I use this section for quick-and-dirty experiments
