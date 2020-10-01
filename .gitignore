@@ -1,7 +1,4 @@
-# Blacklist everything by default
 *
-/config/tellme/
-
 
 !/.gitignore
 !/.gitattributes
@@ -16,3 +13,5 @@
 !/config/
 !/patchouli_books/
 !/structures/
+
+/config/tellme/
