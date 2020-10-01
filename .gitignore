@@ -1,1 +1,14 @@
-*
+$ cat .gitignore
+/*
+
+!/.gitignore
+!/LICENSE
+!/README.md
+!/CHANGELOG
+
+!/icon.png
+!/config/
+/config/tellme
+!/resources/
+!/scripts/
+!/structures/
