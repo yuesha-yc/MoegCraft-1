@@ -13,3 +13,5 @@ $ cat .gitignore
 !/scripts/
 !/structures/
 !/patchouli_books/
+config/AppliedEnergistics2/items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
