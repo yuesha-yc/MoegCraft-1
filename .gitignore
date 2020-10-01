@@ -1,36 +1,18 @@
 # Blacklist everything by default
 *
+/config/tellme/
+
 
 !/.gitignore
 !/.gitattributes
 
-# License files
 !/LICENSE*
 !/LICENSE_zh_CN*
-
-# Documentation files
 !/README.md
-!/supporterlist.txt
-!/supporterlistgold.txt
-
-# Changelogs
 !/CHANGELOG
 
-# Lang file
-!/GregTech.lang
-
-# Resources
-!/resources
-!/scripts
-!/resourcepacks/TFR Theme Texture
-!/modpack
+!/resources/
+!/scripts/
 !/config/
-!/gregtech.cfg
-
-!/config/IGI_TFR_DEBUG.xml
-!/config/IGI_TFR_USER.xml
-
-# Options files
-!/gregtech.cfg
-!/options.txt
-/options.txt
+!/patchouli_books/
+!/structures/
