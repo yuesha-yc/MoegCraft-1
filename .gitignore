@@ -8,10 +8,10 @@
 !/README.md
 !/CHANGELOG
 
-!/resources/
-!/scripts/
-!/config/
-!/patchouli_books/
-!/structures/
+!/resources
+!/scripts
+!/config
+!/patchouli_books
+!/structures
 
 /config/tellme/
