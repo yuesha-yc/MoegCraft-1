@@ -1,17 +1,1 @@
 *
-
-!/.gitignore
-!/.gitattributes
-
-!/LICENSE*
-!/LICENSE_zh_CN*
-!/README.md
-!/CHANGELOG
-
-!/resources
-!/scripts
-!/config
-!/patchouli_books
-!/structures
-
-/config/tellme/
