@@ -8,7 +8,8 @@ $ cat .gitignore
 
 !/icon.png
 !/config/
-/config/tellme
+/config/tellme/*
 !/resources/
 !/scripts/
 !/structures/
+!/patchouli_books/
