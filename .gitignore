@@ -15,3 +15,4 @@ $ cat .gitignore
 !/patchouli_books/
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
+config/chiselsandbits_clipboard.cfg
