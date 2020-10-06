@@ -16,3 +16,5 @@ $ cat .gitignore
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/chiselsandbits_clipboard.cfg
+config/AppliedEnergistics2/VersionChecker.cfg
+config/InvTweaks.cfg
