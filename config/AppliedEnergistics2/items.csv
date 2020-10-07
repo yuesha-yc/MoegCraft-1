@@ -6131,8 +6131,6 @@ silentgems:supercharger, 增压器
 silentgems:soul_urn, 灵魂瓮
 forge:bucketfilled, %s桶
 baubles:ring:0, 矿工指环
-appliedenergistics2:quartz_ore, 赛特斯石英矿石
-appliedenergistics2:charged_quartz_ore, 充能赛特斯石英矿石
 appliedenergistics2:matrix_frame, 矩阵框架
 appliedenergistics2:quartz_block, 赛特斯石英块
 appliedenergistics2:quartz_pillar, 竖纹赛特斯石英块
@@ -6563,8 +6561,6 @@ appliedenergistics2:facade:0, 线缆伪装板 - 实体（12）
 appliedenergistics2:facade:0, 线缆伪装板 - 实体（13）
 appliedenergistics2:facade:0, 线缆伪装板 - 实体（14）
 appliedenergistics2:facade:0, 线缆伪装板 - 实体（15）
-appliedenergistics2:facade:0, 线缆伪装板 - 赛特斯石英矿石
-appliedenergistics2:facade:0, 线缆伪装板 - 充能赛特斯石英矿石
 appliedenergistics2:facade:0, 线缆伪装板 - 赛特斯石英块
 appliedenergistics2:facade:0, 线缆伪装板 - 竖纹赛特斯石英块
 appliedenergistics2:facade:0, 线缆伪装板 - 錾制赛特斯石英块
@@ -13163,34 +13159,34 @@ tconstruct:slime_vine_purple_end:0, 紫色史莱姆藤蔓
 tconstruct:slime_vine_purple_mid:0, 紫色史莱姆藤蔓
 tconstruct:slime_vine_purple:0, 紫色史莱姆藤蔓
 tconstruct:pattern:0, 空白模具
-tconstruct:pattern:0, 铲头模具
-tconstruct:pattern:0, 刀刃模具
-tconstruct:pattern:0, 绑定结模具
-tconstruct:pattern:0, 宽斧刃模具
-tconstruct:pattern:0, 十字柄模具
+tconstruct:pattern:0, 宽护手模具
+tconstruct:pattern:0, 斧刃模具
 tconstruct:pattern:0, 碎片模具
+tconstruct:pattern:0, 宽剑刃模具
+tconstruct:pattern:0, 箭羽模具
+tconstruct:pattern:0, 箭杆模具
+tconstruct:pattern:0, 盘模具
+tconstruct:pattern:0, 绑定结模具
+tconstruct:pattern:0, 锤头模具
+tconstruct:pattern:0, 剑刃模具
 tconstruct:pattern:0, 坚韧手柄模具
 tconstruct:pattern:0, 坚韧绑定结模具
-tconstruct:pattern:0, 镐头模具
+tconstruct:pattern:0, 磨制工具模具
 tconstruct:pattern:0, 手柄模具
+tconstruct:pattern:0, 大板模具
+tconstruct:pattern:0, 园艺镰头模具
 tconstruct:pattern:0, 镰刀头模具
 tconstruct:pattern:0, 箭头模具
 tconstruct:pattern:0, 开掘铲头模具
+tconstruct:pattern:0, 宽斧刃模具
+tconstruct:pattern:0, 十字柄模具
 tconstruct:pattern:0, 弓臂模具
-tconstruct:pattern:0, 斧刃模具
-tconstruct:pattern:0, 箭羽模具
-tconstruct:pattern:0, 剑刃模具
-tconstruct:pattern:0, 箭杆模具
-tconstruct:pattern:0, 盘模具
-tconstruct:pattern:0, 宽剑刃模具
-tconstruct:pattern:0, 锤头模具
-tconstruct:pattern:0, 园艺镰头模具
-tconstruct:pattern:0, 大板模具
-tconstruct:pattern:0, 磨制工具模具
-tconstruct:pattern:0, 宽护手模具
+tconstruct:pattern:0, 弓弦模具
+tconstruct:pattern:0, 铲头模具
+tconstruct:pattern:0, 镐头模具
 tconstruct:pattern:0, 护手模具
 tconstruct:pattern:0, 牌板模具
-tconstruct:pattern:0, 弓弦模具
+tconstruct:pattern:0, 刀刃模具
 tconstruct:shard:0, 磁钢碎片
 tconstruct:shard:0, 充能合金碎片
 tconstruct:shard:0, 脉冲合金碎片
@@ -17247,64 +17243,64 @@ tconstruct:seared_stairs_road:0, 焦黑铺路石楼梯
 tconstruct:seared_stairs_tile:0, 焦黑瓷砖楼梯
 tconstruct:seared_stairs_creeper:0, 焦黑雕琢楼梯
 tconstruct:cast:0, 空白铸模
-tconstruct:cast:0, 铲头铸模
-tconstruct:cast:0, 刀刃铸模
-tconstruct:cast:0, 绑定结铸模
-tconstruct:cast:0, 宽斧刃铸模
-tconstruct:cast:0, 十字柄铸模
+tconstruct:cast:0, 宽护手铸模
+tconstruct:cast:0, 斧刃铸模
 tconstruct:cast:0, 碎片铸模
+tconstruct:cast:0, 宽剑刃铸模
+tconstruct:cast:0, 盘铸模
+tconstruct:cast:0, 绑定结铸模
+tconstruct:cast:0, 锤头铸模
+tconstruct:cast:0, 剑刃铸模
 tconstruct:cast:0, 坚韧手柄铸模
 tconstruct:cast:0, 坚韧绑定结铸模
-tconstruct:cast:0, 镐头铸模
+tconstruct:cast:0, 磨制工具铸模
 tconstruct:cast:0, 手柄铸模
+tconstruct:cast:0, 大板铸模
+tconstruct:cast:0, 园艺镰头铸模
 tconstruct:cast:0, 镰刀头铸模
 tconstruct:cast:0, 箭头铸模
 tconstruct:cast:0, 开掘铲头铸模
+tconstruct:cast:0, 宽斧刃铸模
+tconstruct:cast:0, 十字柄铸模
 tconstruct:cast:0, 弓臂铸模
-tconstruct:cast:0, 斧刃铸模
-tconstruct:cast:0, 剑刃铸模
-tconstruct:cast:0, 盘铸模
-tconstruct:cast:0, 宽剑刃铸模
-tconstruct:cast:0, 锤头铸模
-tconstruct:cast:0, 园艺镰头铸模
-tconstruct:cast:0, 大板铸模
-tconstruct:cast:0, 磨制工具铸模
-tconstruct:cast:0, 宽护手铸模
+tconstruct:cast:0, 弓弦铸模
+tconstruct:cast:0, 铲头铸模
+tconstruct:cast:0, 镐头铸模
 tconstruct:cast:0, 护手铸模
 tconstruct:cast:0, 牌板铸模
-tconstruct:cast:0, 弓弦铸模
+tconstruct:cast:0, 刀刃铸模
 tconstruct:cast_custom:0, 锭铸模
 tconstruct:cast_custom:1, 粒铸模
 tconstruct:cast_custom:2, 宝石铸模
 tconstruct:cast_custom:3, 板铸模
 tconstruct:cast_custom:4, 齿轮铸模
 tconstruct:clay_cast:0, item.tconstruct.clay_cast.blank
-tconstruct:clay_cast:0, 铲头粘土铸模
-tconstruct:clay_cast:0, 刀刃粘土铸模
-tconstruct:clay_cast:0, 绑定结粘土铸模
-tconstruct:clay_cast:0, 宽斧刃粘土铸模
-tconstruct:clay_cast:0, 十字柄粘土铸模
+tconstruct:clay_cast:0, 宽护手粘土铸模
+tconstruct:clay_cast:0, 斧刃粘土铸模
 tconstruct:clay_cast:0, 碎片粘土铸模
+tconstruct:clay_cast:0, 宽剑刃粘土铸模
+tconstruct:clay_cast:0, 盘粘土铸模
+tconstruct:clay_cast:0, 绑定结粘土铸模
+tconstruct:clay_cast:0, 锤头粘土铸模
+tconstruct:clay_cast:0, 剑刃粘土铸模
 tconstruct:clay_cast:0, 坚韧手柄粘土铸模
 tconstruct:clay_cast:0, 坚韧绑定结粘土铸模
-tconstruct:clay_cast:0, 镐头粘土铸模
+tconstruct:clay_cast:0, 磨制工具粘土铸模
 tconstruct:clay_cast:0, 手柄粘土铸模
+tconstruct:clay_cast:0, 大板粘土铸模
+tconstruct:clay_cast:0, 园艺镰头粘土铸模
 tconstruct:clay_cast:0, 镰刀头粘土铸模
 tconstruct:clay_cast:0, 箭头粘土铸模
 tconstruct:clay_cast:0, 开掘铲头粘土铸模
+tconstruct:clay_cast:0, 宽斧刃粘土铸模
+tconstruct:clay_cast:0, 十字柄粘土铸模
 tconstruct:clay_cast:0, 弓臂粘土铸模
-tconstruct:clay_cast:0, 斧刃粘土铸模
-tconstruct:clay_cast:0, 剑刃粘土铸模
-tconstruct:clay_cast:0, 盘粘土铸模
-tconstruct:clay_cast:0, 宽剑刃粘土铸模
-tconstruct:clay_cast:0, 锤头粘土铸模
-tconstruct:clay_cast:0, 园艺镰头粘土铸模
-tconstruct:clay_cast:0, 大板粘土铸模
-tconstruct:clay_cast:0, 磨制工具粘土铸模
-tconstruct:clay_cast:0, 宽护手粘土铸模
+tconstruct:clay_cast:0, 弓弦粘土铸模
+tconstruct:clay_cast:0, 铲头粘土铸模
+tconstruct:clay_cast:0, 镐头粘土铸模
 tconstruct:clay_cast:0, 护手粘土铸模
 tconstruct:clay_cast:0, 牌板粘土铸模
-tconstruct:clay_cast:0, 弓弦粘土铸模
+tconstruct:clay_cast:0, 刀刃粘土铸模
 tconstruct:stone_torch:0, 石柄火把
 tconstruct:stone_ladder:0, 石梯
 tconstruct:punji:0, 尖竹钉
@@ -17793,9 +17789,9 @@ botania:specialflower:0, 小气泡铃
 botania:specialflower:0, 弱磁兰
 botania:specialflower:0, 小弱磁兰
 botania:specialflower:0, 消音柑
-botania:specialflower:0, 碎玉之花
 botania:specialflower:0, 惊雷之花
 botania:specialflower:0, 清露之花
+botania:specialflower:0, 碎玉之花
 botania:specialflower:0, 凋零之花
 botania:spreader:0, 魔力发射器
 botania:spreader:1, 魔力发射器（红石）
@@ -17951,9 +17947,9 @@ botania:floatingspecialflower:0, 浮空小气泡铃
 botania:floatingspecialflower:0, 浮空弱磁兰
 botania:floatingspecialflower:0, 浮空小弱磁兰
 botania:floatingspecialflower:0, 浮空消音柑
-botania:floatingspecialflower:0, 浮空碎玉之花
 botania:floatingspecialflower:0, 浮空惊雷之花
 botania:floatingspecialflower:0, 浮空清露之花
+botania:floatingspecialflower:0, 浮空碎玉之花
 botania:floatingspecialflower:0, 浮空凋零之花
 botania:prism, tile.prism.name
 botania:enchantedsoil, tile.enchantedSoil.name
@@ -24174,8 +24170,6 @@ chiselsandbits:block_bit:0, 雕刻碎屑 - 蓬松方块（棕色）
 chiselsandbits:block_bit:0, 雕刻碎屑 - 蓬松方块（绿色）
 chiselsandbits:block_bit:0, 雕刻碎屑 - 蓬松方块（红色）
 chiselsandbits:block_bit:0, 雕刻碎屑 - 蓬松方块（黑色）
-chiselsandbits:block_bit:0, 雕刻碎屑 - 赛特斯石英矿石
-chiselsandbits:block_bit:0, 雕刻碎屑 - 充能赛特斯石英矿石
 chiselsandbits:block_bit:0, 雕刻碎屑 - 赛特斯石英块
 chiselsandbits:block_bit:0, 雕刻碎屑 - 竖纹赛特斯石英块 东/西
 chiselsandbits:block_bit:0, 雕刻碎屑 - 錾制赛特斯石英块
