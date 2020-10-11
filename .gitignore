@@ -18,3 +18,6 @@ config/AppliedEnergistics2/CustomRecipes.cfg
 config/chiselsandbits_clipboard.cfg
 config/AppliedEnergistics2/VersionChecker.cfg
 config/InvTweaks.cfg
+config/jei/worldSettings.cfg
+config/InvTweaks.cfg
+config/craftpresence.properties
